@@ -31,12 +31,11 @@ class MainActivity : AppCompatActivity() {
         recyclerViewSetUp.layoutManager = LinearLayoutManager(this)
         recyclerViewSetUp.adapter = contactAdapter
 
-// connecting Viewmodel to view
+// connecting 'Viewmodel' to view
         connectViewModel.viewModelContact.observe(this, {contactBook ->
             contactAdapter.submitList(contactBook)
         })
     }
-
 }
 
 

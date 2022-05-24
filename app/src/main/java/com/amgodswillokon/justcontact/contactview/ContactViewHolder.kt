@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.amgodswillokon.justcontact.R
 import com.amgodswillokon.justcontact.contactmodel.ContactData
 
-
 //bind data to recyclerView
 class ContactViewHolder(view: View) :  RecyclerView.ViewHolder(view){
     val contactNameSet = view.findViewById<TextView>(R.id.name_tv)
