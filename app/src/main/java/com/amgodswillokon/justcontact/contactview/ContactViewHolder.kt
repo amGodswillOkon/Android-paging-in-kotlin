@@ -9,7 +9,7 @@ import com.amgodswillokon.justcontact.R
 import com.amgodswillokon.justcontact.contactmodel.ContactData
 
 
-//Binding data to RecyclerView
+//bind data to recyclerView
 class ContactViewHolder(view: View) :  RecyclerView.ViewHolder(view){
     val contactNameSet = view.findViewById<TextView>(R.id.name_tv)
     val contactPhoneSet = view.findViewById<TextView>(R.id.phone_number_tv)

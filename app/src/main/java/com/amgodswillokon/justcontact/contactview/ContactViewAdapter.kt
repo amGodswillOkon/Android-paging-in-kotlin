@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import com.amgodswillokon.justcontact.contactmodel.ContactData
 
 
-//Using PagedListAdapter to page data
+//PagedListAdapter used
 class ContactViewAdapter : PagedListAdapter<ContactData, ContactViewHolder>(DIFFUTIL_CALLBACK) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
 

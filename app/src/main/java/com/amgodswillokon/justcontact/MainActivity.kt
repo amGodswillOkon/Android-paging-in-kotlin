@@ -18,7 +18,6 @@ import com.amgodswillokon.justcontact.contactviewmodel.ViewModelClass
 
 class MainActivity : AppCompatActivity() {
     val connectViewModel = ViewModelClass()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,7 +33,10 @@ class MainActivity : AppCompatActivity() {
 
 // connecting Viewmodel to view
         connectViewModel.viewModelContact.observe(this, {contactBook ->
-                contactAdapter.submitList(contactBook)
-            })
+            contactAdapter.submitList(contactBook)
+        })
     }
+
 }
+
+

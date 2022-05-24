@@ -7,7 +7,7 @@ import com.google.gson.Gson
 
 class ContactSavedNumbers {
 
-    //Class to deserialize Json to object
+    // deserialize Json to object
 companion object {
     lateinit var numbers: ArrayList<ContactData>
 

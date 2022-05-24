@@ -6,7 +6,7 @@ import androidx.paging.PageKeyedDataSource
 import com.amgodswillokon.justcontact.contactutils.ContactSavedNumbers
 import org.apache.http.params.CoreConnectionPNames
 
-//PagedKedDataSource API is used for paging
+//PagedKedDataSource used
 class PagedNumbers : PageKeyedDataSource<Int, ContactData>() {
     private val sourceNumbers = ContactSavedNumbers.returnContact()
 
