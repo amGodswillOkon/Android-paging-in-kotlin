@@ -13,6 +13,9 @@ class ContactViewHolder(view: View) :  RecyclerView.ViewHolder(view){
     val contactNameSet = view.findViewById<TextView>(R.id.name_tv)
     val contactPhoneSet = view.findViewById<TextView>(R.id.phone_number_tv)
 
+
+
+
     fun bindContact(contact : ContactData){
         var contactName = contact.name
         var contactPhone = contact.phone

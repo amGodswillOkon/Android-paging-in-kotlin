@@ -8,15 +8,19 @@ import com.amgodswillokon.justcontact.contactmodel.ContactData
 //PagedListAdapter used
 class ContactViewAdapter : PagedListAdapter<ContactData, ContactViewHolder>(DIFFUTIL_CALLBACK) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
-
         return ContactViewHolder.createContact(parent)
     }
+
+
 
     override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
         val contactInfo = getItem(position)
         if (contactInfo != null) {
+
             holder.bindContact(contactInfo)
         }
+
+
 
     }
 

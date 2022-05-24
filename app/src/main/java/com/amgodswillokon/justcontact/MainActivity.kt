@@ -1,9 +1,8 @@
 package com.amgodswillokon.justcontact
 
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.amgodswillokon.justcontact.contactutils.ContactSavedNumbers
@@ -24,12 +23,17 @@ class MainActivity : AppCompatActivity() {
 
         ContactSavedNumbers.readFromContact(this)
 
+  //add divider to recycler view
+        val recyclerViewVerticalLine = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+
 //setting up recycler view
         val recyclerViewSetUp = findViewById<RecyclerView>(R.id.contact_rv)
         val contactAdapter = ContactViewAdapter()
 
         recyclerViewSetUp.layoutManager = LinearLayoutManager(this)
         recyclerViewSetUp.adapter = contactAdapter
+
+        recyclerViewSetUp.addItemDecoration(recyclerViewVerticalLine)
 
 // connecting 'Viewmodel' to view
         connectViewModel.viewModelContact.observe(this, {contactBook ->
